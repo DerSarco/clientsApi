@@ -40,6 +40,58 @@ On this app, you can find a documentation make in swagger docs for more test and
 
 when you've done all the installation, the swagger documentation is [here](http://localhost:3000/info-docs/) **this link works only in local machines, first start the app and then you can access to the swagger docs, if you gonna try Swagger on your domain, access to `https://YOURDOMAIN/info-docs/`.**
 
+### Data Collections for import MongoDB
+
+```bash
+//clients
+[{
+  "_id": {
+    "$oid": "60d33a4d963d843ad2b40d7d"
+  },
+  "providers": [
+    {
+      "$oid": "60d27cee3174c908f0c64378"
+    },
+    {
+      "$oid": "60d2c30d93f70a2ba94ab85d"
+    }
+  ],
+  "name": "client test",
+  "email": "client@client.com",
+  "__v": 0,
+  "phon": "89929882"
+}]
+
+```
+```bash
+//providers
+[{
+  "_id": {
+    "$oid": "60d27cee3174c908f0c64378"
+  },
+  "name": "Provider 1",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60d2c30793f70a2ba94ab85a"
+  },
+  "name": "Provider Test",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60d2c30d93f70a2ba94ab85d"
+  },
+  "name": "Provider Example",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60d33994963d843ad2b40d64"
+  },
+  "name": "new provider",
+  "__v": 0
+}]
+
+```
 ## Schemas example for MongoDB
 
 ```bash
