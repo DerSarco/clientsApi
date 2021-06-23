@@ -1,7 +1,3 @@
-{
-  "fields": [],
-  "count": 0
-}
 # Clients API
 
 This API solve the need to connect to a Mongo DB for create Clients and Providers for the app [Clients](https://github.com/sarcowww/clients) made in VUE.
