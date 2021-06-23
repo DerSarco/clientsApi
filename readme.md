@@ -9,7 +9,23 @@ first of all, you need to configure an Mongo DB, in this example was made it loc
 
 after the installation, you need to create a database in my case i named mine **Clients**, and made two collections **clients & providers**.
 
-I leave this schemas if an example is needed.
+I leave the schemas at the end of this file if an example is needed.
+## Instalation and usage.
+
+after use this API, please create an .env file in root folder with the next format (i leave mine .env for the example cause is locally):
+
+```bash
+DATABASE_URL=mongodb:YOURURL
+```
+
+ when the config is finished please use the command. **npm install**. after that, please run **npm run dev**, the API will work with Nodemon.
+
+## Swager docs.
+On this app, you can find a documentation make in swagger docs for more test and usability, there you can test directly the endpoints for clients and providers.
+
+when you've done all the installation, the swagger documentation is [here](http://localhost:3000/info-docs/) **this link works only in local machines**
+
+## Schemas example for MongoDB
 
 ```bash
 //Clients
@@ -272,18 +288,5 @@ I leave this schemas if an example is needed.
   "count": 3
 }
 ```
-
-## Instalation and usage.
-
-after use this API, please create an .env file in root folder with the next format (i leave mine .env for the example cause is locally):
-
-```bash
-DATABASE_URL=mongodb:YOURURL
-```
-
- when the config is finished please use the command. **npm install**. after that, please run **npm run dev**, the API will work with Nodemon.
-
-
-
 ## License
 [ISC](https://choosealicense.com/licenses/isc/)
