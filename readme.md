@@ -20,7 +20,7 @@ This is only for API test.
 - [Nodemon](https://www.npmjs.com/package/nodemon)
 ## Database creation
 
-first of all, you need to configure an Mongo DB, in this example was made it locally on MacOS Big Sur, with the next [documentation](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x-tarball/), very easy to install.
+first of all, you need to configure a Mongo DB, in this example was made it locally on MacOS Big Sur, with the next [documentation](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x-tarball/), very easy to install.
 
 after the installation, you need to create a database in my case i named mine **Clients**, and made two collections **clients & providers**.
 
