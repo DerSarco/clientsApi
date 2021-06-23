@@ -275,7 +275,7 @@ I leave this schemas if an example is needed.
 
 ## Instalation and usage.
 
-after user this API, please create an .env file in root folder with the next format (i leave mine .env for the example cause is locally):
+after use this API, please create an .env file in root folder with the next format (i leave mine .env for the example cause is locally):
 
 ```bash
 DATABASE_URL=mongodb:YOURURL
