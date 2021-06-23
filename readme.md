@@ -1,8 +1,23 @@
 # Clients API
 
 This API solve the need to connect to a Mongo DB for create Clients and Providers for the app [Clients](https://github.com/sarcowww/clients) made in VUE.
+## Libraries used
 
+A few libraries used on the API:
 
+- [Body Parser](https://www.npmjs.com/package/body-parser)
+- [CORS](https://www.npmjs.com/package/cors)
+- [Dot Env](https://www.npmjs.com/package/dotenv)
+- [Express](https://www.npmjs.com/package/express)
+- [Mongoose](https://www.npmjs.com/package/mongoose)
+- [Swagger JSDoc](https://www.npmjs.com/package/swagger-jsdoc)
+- [Swagger UI Express](https://www.npmjs.com/package/swagger-ui-express)
+
+##### Dev Libraries
+
+This is only for API test.
+
+- [Nodemon](https://www.npmjs.com/package/nodemon)
 ## Database creation
 
 first of all, you need to configure an Mongo DB, in this example was made it locally on MacOS Big Sur, with the next [documentation](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x-tarball/), very easy to install.
@@ -23,7 +38,7 @@ DATABASE_URL=mongodb:YOURURL
 ## Swager docs.
 On this app, you can find a documentation make in swagger docs for more test and usability, there you can test directly the endpoints for clients and providers.
 
-when you've done all the installation, the swagger documentation is [here](http://localhost:3000/info-docs/) **this link works only in local machines, first start the app and then you can access to the swagger docs.**
+when you've done all the installation, the swagger documentation is [here](http://localhost:3000/info-docs/) **this link works only in local machines, first start the app and then you can access to the swagger docs, if you gonna try Swagger on your domain, access to `https://YOURDOMAIN/info-docs/`.**
 
 ## Schemas example for MongoDB
 
