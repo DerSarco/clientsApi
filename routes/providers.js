@@ -5,25 +5,31 @@ const {
   const router = Router();
 
   router.get('/', async (req, res) => {
-    const providers = await providerModel.find();
-      res.send(providers)
+    try {
+      const providers = await providerModel.find();
+        res.send(providers)
+    } catch (error) {
+      res.status(404)
+      res.send({
+        error: "Providers cannot be retrieved!"
+      })
+    }
   })
 
   router.post('/', async (req, res)=> {
-    const provider = new providerModel({
-      name: req.body.name
-    })
-    await provider.save();
-    res.send(provider)
+    try {
+      const provider = new providerModel({
+        name: req.body.name
+      })
+      await provider.save();
+      res.send(provider)
+    } catch (error) {
+      res.status(404)
+      res.send({
+        error: "Provider cannot be created!"
+      })
+    }
   })
-  router.delete('/', async (req, res)=> {
-    const provider = new providerModel({
-      name: req.body.name,
-    })
-    await provider.save();
-    res.send(provider)
-  })
-
 
   router.delete("/:id", async (req, res) => {
     try {
