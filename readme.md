@@ -23,7 +23,7 @@ DATABASE_URL=mongodb:YOURURL
 ## Swager docs.
 On this app, you can find a documentation make in swagger docs for more test and usability, there you can test directly the endpoints for clients and providers.
 
-when you've done all the installation, the swagger documentation is [here](http://localhost:3000/info-docs/) **this link works only in local machines**
+when you've done all the installation, the swagger documentation is [here](http://localhost:3000/info-docs/) **this link works only in local machines, first start the app and then you can access to the swagger docs.**
 
 ## Schemas example for MongoDB
 
