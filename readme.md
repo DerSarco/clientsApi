@@ -20,30 +20,30 @@ This is only for API test.
 - [Nodemon](https://www.npmjs.com/package/nodemon)
 ## Database creation
 
-first of all, you need to configure a Mongo DB, in this example was made it locally on MacOS Big Sur, with the next [documentation](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x-tarball/), very easy to install.
+First of all, you need to configure a Mongo DB, in this example was made it locally on MacOS Big Sur, with the next [documentation](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x-tarball/), very easy to install.
 
-after the installation, you need to create a database in my case i named mine **Clients**, and made two collections **clients & providers**.
+After the installation, you need to create a database in my case i named mine **Clients**, and made two collections **clients & providers**.
 
 I leave the schemas at the end of this file if an example is needed.
 ## Instalation and usage.
 
-after use this API, please create an .env file in root folder with the next format (i leave mine .env for the example cause is locally):
+After use this API, please create an .env file in root folder with the next format (i leave mine .env for the example cause is locally):
 
 ```bash
 DATABASE_URL=mongodb:YOURURL
 ```
 
- when the config is finished please use the command. **npm install**. after that, please run **npm run dev**, the API will work with Nodemon.
+When the config is finished please use the command. **npm install**. after that, please run **npm run dev**, the API will work with Nodemon.
 
 ## Swager docs.
 On this app, you can find a documentation make in swagger docs for more test and usability, there you can test directly the endpoints for clients and providers.
 
-when you've done all the installation, the swagger documentation is [here](http://localhost:3000/info-docs/) **this link works only in local machines, first start the app and then you can access to the swagger docs, if you gonna try Swagger on your domain, access to `https://YOURDOMAIN/info-docs/`.**
+When you've done all the installation, the swagger documentation is [here](http://localhost:3000/info-docs/) **this link works only in local machines, first start the app and then you can access to the swagger docs, if you gonna try Swagger on your domain, access to `https://YOURDOMAIN/info-docs/`.**
 
 ### Data Collections for import MongoDB
 
 ```bash
-//clients
+/*clients*/
 [{
   "_id": {
     "$oid": "60d33a4d963d843ad2b40d7d"
@@ -64,7 +64,7 @@ when you've done all the installation, the swagger documentation is [here](http:
 
 ```
 ```bash
-//providers
+/*providers*/
 [{
   "_id": {
     "$oid": "60d27cee3174c908f0c64378"
@@ -95,7 +95,7 @@ when you've done all the installation, the swagger documentation is [here](http:
 ## Schemas example for MongoDB
 
 ```bash
-//Clients
+/*Clients*/
 {
   "fields": [
     {
@@ -270,7 +270,7 @@ when you've done all the installation, the swagger documentation is [here](http:
 ```
 
 ```bash
-//Providers
+/*Providers*/
 {
   "fields": [
     {
